@@ -15,6 +15,7 @@ import { ChunkProcessingWays } from "./compositions/ChunkProcessingWays";
 import { ErrorHandlingWays } from "./compositions/ErrorHandlingWays";
 import { ScalingWays } from "./compositions/ScalingWays";
 import { InterfacesAndDSA } from "./compositions/InterfacesAndDSA";
+import { FailureScenarios } from "./compositions/FailureScenarios";
 
 export const RemotionRoot = () => {
   return (
@@ -150,6 +151,16 @@ export const RemotionRoot = () => {
         id="InterfacesAndDSA"
         component={InterfacesAndDSA}
         durationInFrames={970}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Spring Batch — Failure Scenarios Story */}
+      <Composition
+        id="FailureScenarios"
+        component={FailureScenarios}
+        durationInFrames={2090}
         fps={30}
         width={1920}
         height={1080}
