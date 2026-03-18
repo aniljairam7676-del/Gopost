@@ -17,6 +17,7 @@ import { ScalingWays } from "./compositions/ScalingWays";
 import { InterfacesAndDSA } from "./compositions/InterfacesAndDSA";
 import { FailureScenarios } from "./compositions/FailureScenarios";
 import { RedisCacheSpringBatch } from "./compositions/RedisCacheSpringBatch";
+import { RedisInternals } from "./compositions/RedisInternals";
 
 export const RemotionRoot = () => {
   return (
@@ -172,6 +173,16 @@ export const RemotionRoot = () => {
         id="RedisCacheSpringBatch"
         component={RedisCacheSpringBatch}
         durationInFrames={2110}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Redis Internals — The Kingdom of Redis Story */}
+      <Composition
+        id="RedisInternals"
+        component={RedisInternals}
+        durationInFrames={2950}
         fps={30}
         width={1920}
         height={1080}
