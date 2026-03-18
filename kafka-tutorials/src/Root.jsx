@@ -9,6 +9,11 @@ import { JobAndSteps } from "./compositions/JobAndSteps";
 import { ChunkProcessing } from "./compositions/ChunkProcessing";
 import { ErrorHandling } from "./compositions/ErrorHandling";
 import { SpringBatchArchitecture } from "./compositions/SpringBatchArchitecture";
+import { SpringBatchIntroWays } from "./compositions/SpringBatchIntroWays";
+import { JobAndStepsWays } from "./compositions/JobAndStepsWays";
+import { ChunkProcessingWays } from "./compositions/ChunkProcessingWays";
+import { ErrorHandlingWays } from "./compositions/ErrorHandlingWays";
+import { ScalingWays } from "./compositions/ScalingWays";
 
 export const RemotionRoot = () => {
   return (
@@ -92,6 +97,48 @@ export const RemotionRoot = () => {
         id="SpringBatchArchitecture"
         component={SpringBatchArchitecture}
         durationInFrames={480}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Spring Batch — "Ways to Implement" Deep Dives */}
+      <Composition
+        id="SpringBatchIntroWays"
+        component={SpringBatchIntroWays}
+        durationInFrames={550}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="JobAndStepsWays"
+        component={JobAndStepsWays}
+        durationInFrames={580}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ChunkProcessingWays"
+        component={ChunkProcessingWays}
+        durationInFrames={540}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ErrorHandlingWays"
+        component={ErrorHandlingWays}
+        durationInFrames={580}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ScalingWays"
+        component={ScalingWays}
+        durationInFrames={650}
         fps={30}
         width={1920}
         height={1080}
