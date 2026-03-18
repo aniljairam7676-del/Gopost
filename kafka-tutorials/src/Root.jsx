@@ -16,6 +16,7 @@ import { ErrorHandlingWays } from "./compositions/ErrorHandlingWays";
 import { ScalingWays } from "./compositions/ScalingWays";
 import { InterfacesAndDSA } from "./compositions/InterfacesAndDSA";
 import { FailureScenarios } from "./compositions/FailureScenarios";
+import { RedisCacheSpringBatch } from "./compositions/RedisCacheSpringBatch";
 
 export const RemotionRoot = () => {
   return (
@@ -161,6 +162,16 @@ export const RemotionRoot = () => {
         id="FailureScenarios"
         component={FailureScenarios}
         durationInFrames={2090}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Spring Batch — Redis Cache Integration Story */}
+      <Composition
+        id="RedisCacheSpringBatch"
+        component={RedisCacheSpringBatch}
+        durationInFrames={2110}
         fps={30}
         width={1920}
         height={1080}
