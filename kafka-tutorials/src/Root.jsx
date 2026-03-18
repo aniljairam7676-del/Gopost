@@ -14,6 +14,7 @@ import { JobAndStepsWays } from "./compositions/JobAndStepsWays";
 import { ChunkProcessingWays } from "./compositions/ChunkProcessingWays";
 import { ErrorHandlingWays } from "./compositions/ErrorHandlingWays";
 import { ScalingWays } from "./compositions/ScalingWays";
+import { InterfacesAndDSA } from "./compositions/InterfacesAndDSA";
 
 export const RemotionRoot = () => {
   return (
@@ -139,6 +140,16 @@ export const RemotionRoot = () => {
         id="ScalingWays"
         component={ScalingWays}
         durationInFrames={650}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Spring Batch — Interfaces & DSA Deep Dive */}
+      <Composition
+        id="InterfacesAndDSA"
+        component={InterfacesAndDSA}
+        durationInFrames={970}
         fps={30}
         width={1920}
         height={1080}
