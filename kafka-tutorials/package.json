@@ -1,0 +1,18 @@
+{
+  "name": "kafka-tutorials-remotion",
+  "version": "1.0.0",
+  "description": "Animated Kafka concept tutorials built with Remotion",
+  "scripts": {
+    "studio": "remotion studio src/index.js",
+    "render": "remotion render src/index.js",
+    "render:all": "remotion render src/index.js KafkaIntro out/kafka-intro.mp4 && remotion render src/index.js TopicsAndPartitions out/topics-partitions.mp4 && remotion render src/index.js ProducersAndConsumers out/producers-consumers.mp4 && remotion render src/index.js ConsumerGroups out/consumer-groups.mp4 && remotion render src/index.js KafkaArchitecture out/kafka-architecture.mp4",
+    "render:still": "remotion still src/index.js KafkaIntro out/thumbnail.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.436",
+    "@remotion/player": "^4.0.436",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.436"
+  }
+}
