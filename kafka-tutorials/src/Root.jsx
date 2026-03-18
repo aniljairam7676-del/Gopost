@@ -4,10 +4,16 @@ import { TopicsAndPartitions } from "./compositions/TopicsAndPartitions";
 import { ProducersAndConsumers } from "./compositions/ProducersAndConsumers";
 import { ConsumerGroups } from "./compositions/ConsumerGroups";
 import { KafkaArchitecture } from "./compositions/KafkaArchitecture";
+import { SpringBatchIntro } from "./compositions/SpringBatchIntro";
+import { JobAndSteps } from "./compositions/JobAndSteps";
+import { ChunkProcessing } from "./compositions/ChunkProcessing";
+import { ErrorHandling } from "./compositions/ErrorHandling";
+import { SpringBatchArchitecture } from "./compositions/SpringBatchArchitecture";
 
 export const RemotionRoot = () => {
   return (
     <>
+      {/* Kafka Tutorials */}
       <Composition
         id="KafkaIntro"
         component={KafkaIntro}
@@ -43,6 +49,48 @@ export const RemotionRoot = () => {
       <Composition
         id="KafkaArchitecture"
         component={KafkaArchitecture}
+        durationInFrames={480}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Spring Batch Tutorials — "The Gym of Data Processing" */}
+      <Composition
+        id="SpringBatchIntro"
+        component={SpringBatchIntro}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="JobAndSteps"
+        component={JobAndSteps}
+        durationInFrames={450}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ChunkProcessing"
+        component={ChunkProcessing}
+        durationInFrames={480}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ErrorHandling"
+        component={ErrorHandling}
+        durationInFrames={420}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="SpringBatchArchitecture"
+        component={SpringBatchArchitecture}
         durationInFrames={480}
         fps={30}
         width={1920}
