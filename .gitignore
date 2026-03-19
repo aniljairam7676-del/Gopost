@@ -49,3 +49,8 @@ coverage/
 *.lcov
 
 gopost_app/native/gopost_engine/build_macos/
+
+# Remotion / Node
+kafka-tutorials/node_modules/
+kafka-tutorials/out/
+kafka-tutorials/.remotion/
